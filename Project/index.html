@@ -4,13 +4,114 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="javascript" href="styles.css">
-    <script src="valorant.js"></script>  
     <title>API Valorant</title>
   </head>
+  <style>
+    html{
+      background-color: darkgray;
+    }
+    #Weapons {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 20px;       
+    justify-content: center; 
+    padding: 20px;
+    float: left;
+} 
+.agent-container {
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 5px;
+    
+}
+p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left:6%;
+  margin-right:6%;
+}
+.ability-card {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+    size: 10%;
+    width: 50%;
+    margin-left: 23%;
+}
+.agent-container{
+  align-content: center;
+}
+.agent-container h2{
+  align-content: center;
+}
 
+.ability-icon{
+  background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+    size: 5%;
+    width: 25%;
+    
+}
+.ability-description {
+    font-size: 12px;
+    color: #555;
+}
+.agent-icon-small {
+    width: 200px;
+    height: 200px;
+    align-content: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    margin-left: 43%;
+}
+h2{
+  color: red;
+  margin-left:46%;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+img{
+  align-content: center;
+}
+
+    .card{
+      border: 5px solid;
+      padding: 5px;
+      border-color: black;
+      border-radius: 20px;
+      background-color: gray;
+      margin-top: 5%;
+      float: left;
+
+    }
+    .card img{
+     width: 50%;
+    }
+    .card h3{
+     
+      margin-left: 28%;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    
+    }
+  </style>
 
   <body>
-    <h1></h1>
-    <output></output>
+    <h1 style=" background-color: gray; text-align:center; margin-top: 0; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:red; font-size: 100px;">
+      Valorant
+    </h1>
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:red; margin-left: 44%; font-size: 50px;">Weapons </h1>
+
+    <div id ="Weapons">
+    </div>
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:red; margin-left: 44%; font-size: 50px;">Agents </h1>
+    <div id ="Agents">
+    </div>
+
+    <script src="valorant.js"></script>  
   </body>
 </html>
